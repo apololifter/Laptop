@@ -1,0 +1,105 @@
+body{
+    background-color: cornsilk;
+}
+
+.header{
+    width: 800px;
+    height: 60px;
+    border-radius:0.5pc;
+    border:1px solid;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.nav{
+    width: 800px;
+    height: 60px;
+    border-radius:0.5pc;
+    border:1px solid;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.main{
+    display: flex;
+}
+
+.nav2{
+    width: 300px;
+    height: 550px;
+    border-radius:0.5pc;
+    border:1px solid;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.section{
+    width: 440px;
+    height: 265px;
+    border-radius:0.5pc;
+    border:1px solid;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.section2{
+    width: 440px;
+    height: 265px;
+    border-radius:0.5pc;
+    border:1px solid;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.aside3{
+    width: 300px;
+    height: 550px;
+    border-radius:0.5pc;
+    border:1px solid;
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.footer{
+    width: 800px;
+    height: 50px;
+    border-radius:0.5pc;
+    border:1px solid;
+    float: inline-end;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.article{
+    width: 250px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 0.5pc;
+    margin-top: 25px;
+    float: left;
+}
+
+.aside{
+    width: 100px;
+    height: 235px;
+    border: 1px solid;
+    border-radius: 0.5pc;
+    float:right;
+    margin-top: 25px;
+}
