@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+}
+
+.nav{
+    min-width: none;
+    height: 40px;
+    border: 2px solid;
+    text-align: center;
+    padding-top: 10px;
+    background-color: blue;
+}
+
+.links-{
+    margin-right: 80px;
+    font-size: 22px;
+    color: white;
+
+}
+
+header{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.slider-box{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    width: 300%;
+    padding: 0;
+    animation: carrusel  30s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 33,3%;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-box img{
+    width: 100%;
+    height: auto;
+}
+
+
+@keyframes carrusel {
+    0%{margin: left 0%;}   
+    20%{margin: left 0%;}   
+    
+    30%{margin: left -100%;}   
+    40%{margin: left -100%;}   
+
+    50%{margin: left -200%;}   
+    60%{margin: left -200%;}   
+
+    70%{margin: left -300%;}   
+    80%{margin: left -300%;}   
+
+    90%{margin: left 0%;}   
+    100%{margin: left 0%;}   
+}
+
+.section1{
+    width: 500px;
+    height: 300px;
+    border: 2px solid;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 200px;
+    background-color:gray;
+}
+
+.section2{
+    width: 1200px;
+    height: 300px;
+    border: 2px solid;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.aside1{
+    width: 400px;
+    height: 300px;
+    border: 2px solid;
+    overflow: hidden;
+}
+
+.aside1 img{
+    width: 100%;
+}
+
+.aside2{
+    background-color:grey;
+    width:800px;
+}

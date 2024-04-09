@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(30,34,35,255);
+}
+
+.nav-superior{
+    min-width: none;
+    height: 40px;
+    background-color:rgba(27,54,118,255);
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+
+
+input[type=text], input[type=submit],input[type=password], input[type=email]{
+    width: 200px;
+    height: 3cap;
+    padding-left: 5px ;
+    margin:20px 20px;
+    outline:none;
+    border:0px;
+    border-top:0px;
+    background-color:white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.contenedor-principal{
+    position: relative;
+}
+
+.formulario{
+    position: relative;
+    float: right;
+    width: 300px;
+    padding:10px;
+    background-color: rgba(27,54,118,255);
+    color: white;
+    z-index: 1;
+    font-size: 14px;
+    display: none;
+    transition: 4s;
+    padding-top: 10px;
+}
+
+.formulario:hover{
+    height: auto;
+}
+
+.fas.fa-bars:hover .formulario{
+    display: block;
+    opacity: 1;
+    height: 300px;
+}
+
+.fas.fa-bars{
+    color:#ffc107;;
+    font-size: 22px;
+    float: right;
+    margin-right: 30px;
+}
+
+.nav-inicio{
+    font-size: 18px;
+    color:white;
+    margin-right: 30px;
+}
+
+header {
+    position: relative;
+    overflow: hidden; /* Asegura que los elementos posicionados absolutamente dentro de él se alineen correctamente */
+}
+
+.slider-box {
+    width: 100%; /* Opcional: Haz que el carrusel ocupe todo el ancho del header */
+    max-width: 100%; /* Opcional: Asegura que el carrusel no se desborde */
+    height: auto;
+    overflow: hidden; /* Oculta el desbordamiento de los elementos internos */
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 300%; /* Cambia esto para ajustar el número de imágenes en el carrusel */
+    animation: slide 40s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 33.33%; /* Ajusta esto según el número de imágenes en el carrusel */
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-box img {
+    width: 100%;
+    height: auto; /* Asegura que las imágenes se escalen correctamente */
+}
+
+
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    30% { margin-left: -100%; }
+    40% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    60% { margin-left: -200%; }
+
+    70% { margin-left: -100%; }
+    80% { margin-left: -100%; }
+
+    90% { margin-left: 0; }
+    100% { margin-left: 0; }
+
+}
+.section1{
+    width: 500px;
+    height: 300px;
+    border: 1px solid;
+    margin-left: 150px;
+    margin-top: 250px;
+    color:white;
+    position: absolute;
+    margin-top: -250px;
+    background-color:rgba(25,27,28,255);
+}
+
+#astro-s{
+    max-width: fit-content;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 16px;
+    color: white;
+    background-color:rgba(33,88,164,255);
+    border:5px rgba(33,88,164,255);
+    border-radius: 5px;
+}
+
+#astro-texto{
+    margin-top: 10px;
+    margin-left: 50px; 
+    font-size: 34px;
+    font-weight: bold;
+}
+#astro-link{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 16px;
+    color:rgba(84,180,227,255);
+}
+
+
+.section2{
+    max-width: 1200px;
+    height: 300px;
+    border-top:4px solid rgba(37,106,199,255);
+    border-left:1px solid white;
+    border-bottom:1px solid white;
+    border-right:1px solid white;
+    color: white;
+    margin-top: 150px;
+    margin-left: 210px;
+    position: relative;
+}
+
+.aside1{
+    max-width: 300px;
+    height: 300px;
+    color:white;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+.aside1 img{
+    max-width: 300px;
+    max-height:300px ;
+}
+
+.articulo1{
+    max-width: 900px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    margin: 0%;
+    background-color:rgba(25,27,28,255);
+}
+
+.parrafo1 {
+    max-width: max-content;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 16px;
+    color: white;
+    background-color:rgba(33,88,164,255);
+    border:5px rgba(33,88,164,255);
+    border-radius: 5px;
+}
+
+
+.parrafo2{
+    margin-top: 10px;
+    margin-left: 30px; 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parrafo3{
+    font-size:18px ;
+    margin-left: 30px;
+    margin-right: 200px;
+    max-height:max-content;
+}
+.parrafo4{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 16px;
+    max-height: fit-content;
+    color:rgba(84,180,227,255);
+}
+
+
