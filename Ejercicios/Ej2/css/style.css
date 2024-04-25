@@ -1,103 +1,44 @@
 *{
-    margin: 0;
+    font-family: "Helvetica Black", Arial, sans-serif;
 }
 
-.nav{
+.col{
+    border: 1px solid;
     min-width: none;
-    height: 40px;
-    border: 2px solid;
-    text-align: center;
-    padding-top: 10px;
-    background-color: blue;
-}
-
-.links-{
-    margin-right: 80px;
-    font-size: 22px;
+    background-color:rgb(252, 0, 0);
     color: white;
-
+    font-size: 18px;
 }
 
-header{
-    position: relative;
-    overflow: hidden;
+.navbar navbar-expand-lg bg-body-tertiary{
+    font-size: 22px;
 }
 
-
-.slider-box{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
+.dropdown-items{
+    text-decoration:dotted color;
+    color: black;
+    background-color:white;
+    font-size: 20px;
+    padding-top: 3px;
+    margin-top: 10px ;
 }
 
-.slider-box ul{
-    display: flex;
-    width: 300%;
-    padding: 0;
-    animation: carrusel  30s infinite alternate ease-in-out;
+.Redes-sociales{
+    text-decoration:dotted color;
+    color: black;
+    background-color:white;
+    font-size: 20px;
+    padding-top: 3px;
 }
 
-.slider-box li{
-    width: 33,3%;
-    list-style: none;
-    position: relative;
-    overflow: hidden;
+.col-7{
+    border: 1px solid;
+    min-width: none;
+    background-color:rgb(252, 0, 0);
+    color: white;
+    font-size: 18px;
 }
 
-.slider-box img{
-    width: 100%;
-    height: auto;
-}
-
-
-@keyframes carrusel {
-    0%{margin: left 0%;}   
-    20%{margin: left 0%;}   
-    
-    30%{margin: left -100%;}   
-    40%{margin: left -100%;}   
-
-    50%{margin: left -200%;}   
-    60%{margin: left -200%;}   
-
-    70%{margin: left -300%;}   
-    80%{margin: left -300%;}   
-
-    90%{margin: left 0%;}   
-    100%{margin: left 0%;}   
-}
-
-.section1{
-    width: 500px;
-    height: 300px;
-    border: 2px solid;
-    position: absolute;
-    margin-top: 220px;
-    margin-left: 200px;
-    background-color:gray;
-}
-
-.section2{
-    width: 1200px;
-    height: 300px;
-    border: 2px solid;
-    margin-top: 100px;
-    margin-left: 300px;
-}
-
-.aside1{
-    width: 400px;
-    height: 300px;
-    border: 2px solid;
-    overflow: hidden;
-}
-
-.aside1 img{
-    width: 100%;
-}
-
-.aside2{
-    background-color:grey;
-    width:800px;
+.Registrarse{
+    margin-left: 10px;
 }

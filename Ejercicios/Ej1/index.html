@@ -1,74 +1,65 @@
 <!DOCTYPE html>
-<html lang="es-419">
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="contenedor-principal">
-        <nav class="nav-superior">
-            <a class="nav-inicio" href="file:///C:/Users/Eduardo/Programaci%C3%B3n/Ejercicios/index.html">Ir al inicio</a>
-            <a class="nav-inicio" href="google.com">Programas de estudio</a>
-            <a class="nav-inicio" href="google.com">Certificaciones</a>
-            <a class="nav-inicio" href="google.com">Biblioteca</a>
-            <a class="nav-inicio" href="google.com">Donaciones</a>
-            <a class="nav-inicio" href="google.com">Mi Portal Uc</a>
-            <a class="nav-inicio" href="google.com">Correo</a>
-            <i class="fas fa-bars">
-                <form class="formulario" action="#" method="get"> Ingrese aquí sus datos!
-                    <input type="text" name="txt-nombre" id="txt-nombre" placeholder="Nombre">
-                    <input type="text" name="txt-apellido" id="txt-apellido" placeholder="Apellido">
-                    <input type="email" name="txt-email" id="txt-email" placeholder="Email">
-                    <input type="password" name="txt-password" id="txt-password" placeholder="Contraseña">
-                    <input type="submit" name="txt-submit" id="txt-submit" placeholder="Enviar">
-                </form>
-            </i>
-        </nav>
-    </div>    
-    <header>
-        <div class="slider-box">
-            <ul>
-                <li>
-                    <img src="./images/Imagen1.jpg" alt="Imagen 1">
-                    <div class="texto">
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/Imagen2.jpg" alt="Imagen 1">
-                    <div class="texto">
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/Imagen3.jpg" alt="Imagen 1">
-                    <div class="texto">
-                    </div>
-                </li>
-            </ul>
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
         </div>
-    </header>
-    <section class="section1">
-        <p id="astro-s">Astronomia</p>
-        <p id="astro-texto">Inauguran el
-            supercomputador de mayor
-            potencia de Chile para Ia
-            observación astronómica</p>
-        <a id="astro-link" href="google.com">Ir al articulo</a>
-    </section>
-    <section class="section2">
-        <aside class="aside1"> <img src="./images/Noticia.jpg" alt=""></aside>
-        <article class="articulo1">    
-            <p class="parrafo1">Comunidad UC</p>
-            <p class="parrafo2">Inauguración de año académico 
-                <span class="animated-card"></span>
-            </p>
-            <p class="parrafo3">Invitamos a la comunidad UC a participar, este viernes 5 de abril, de la ceremonia
-                presidida por el Arzobispo de Santiago y Gran Canciller Monseñor Fernando Chorna".
-                Presencial Campus LO Contador / Transmisión en línea</p>
-            <a class="parrafo4" href="google.com">Conoce la programación</a>
-        </article>    
-    </section>
+      </div>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Ingresar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
