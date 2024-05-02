@@ -1,0 +1,60 @@
+
+
+.icon-margin{
+    margin-top: 10px;
+    
+}
+
+.icon-margin2{
+    margin-top: 25px;
+    font-size: 12px;
+    text-align:end;
+    margin-left: 10px;
+}
+
+.icon-margin2{
+    align-items: center;
+}
+
+
+.youtube-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  
+  .youtube-card:hover {
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .youtube-card .card-img-top {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .youtube-card .card-body {
+    padding: 1rem;
+  }
+  
+  .youtube-card .card-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .youtube-card .card-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+
+.horizontal-list li {
+    display: inline-block;
+    margin-right: 10px; /* Ajusta este valor según tu preferencia para el espaciado entre los elementos */
+}
+  
+
+.horizontal-list li h1{
+    font-size: 12px;
+}
+  
