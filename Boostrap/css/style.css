@@ -1,0 +1,79 @@
+*{
+    color: black;
+    font-family: 'Noto Sans JP',sans-serif;
+}
+
+
+
+.container-fluid{
+    margin-top: 10%;
+}
+
+.login-button{
+    margin-top: 13%;
+    margin-right: 20px;
+}
+
+.Header2{
+    font-family: 'Noto Sans JP',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 50%;
+    overflow: hidden;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Menu, .Soporte a, .Contacto a, .icono-blanco{
+    color:white;
+}
+
+
+
+.bi-instagram, .bi-tiktok, .bi-youtube{
+    font-size: 30px;
+}
+
+ul.horizontal-list {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    display: flex; /* Establece la dirección de la lista como horizontal */
+  }
+
+  /* Estilos para los elementos de la lista */
+  ul.horizontal-list li {
+    margin-right: 20px; /* Espacio entre los elementos de la lista */
+  }
+
+  /* Estilos para los enlaces */
+  ul.horizontal-list li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: black; /* Color del texto */
+  }
+
+
+
+footer{
+    margin-top:20px;
+    margin-left: 20px;
+}
+
+.footer2{
+    float: right;
+    display: flex;
+}
