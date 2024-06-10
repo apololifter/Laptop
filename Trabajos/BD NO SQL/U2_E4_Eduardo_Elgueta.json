@@ -1,0 +1,183 @@
+use LibreríaBookMaster
+
+db.createCollection("Libros");
+
+db.Libros.insertMany([{
+    Titulo: "Don quijote de la mancha",
+    Autor: "Miguel de Cervantes",
+    Precio: 17000,
+    Editorial: []
+},
+{
+    Titulo: "Historia de dos ciudades",
+    Autor: "Charles Dickens",
+    Precio: 17000,
+    Editorial: []
+},
+{
+    Titulo: "El señor de los anillos",
+    Autor: "J.R.R. Tolkien",
+    Precio: "15000",
+    Editorial: []
+},
+{
+    Titulo: "El principito",
+    Autor: "Antoine de Saint-Exupéry",
+    Precio: 11000,
+    Editorial: []
+},
+{
+    Titulo: "El hobbit",
+    Autor: "J.R.R. Tolkien",
+    Precio: "15000",
+    Editorial: []
+},
+{
+    Titulo: "Sueño en el pabellón rojo",
+    Autor: "Cao Xueqin",
+    Precio: 5000,
+    Editorial: []
+},
+{
+    Titulo: "Las aventuras de Alicia en el país de las maravillas",
+    Autor: "Lewis Carroll",
+    Precio: 20000,
+    Editorial: []
+},
+{
+    Titulo: "Triple Representatividad",
+    Autor: "Jiang Zemin",
+    Precio: "16000",
+    Editorial: []
+},
+{
+    Titulo: "Y no quedó ninguno (Diez Negritos)",
+    Autor: "Agatha Christie",
+    Precio: 11000,
+    Editorial: []
+},
+{
+    Titulo: "El león, la bruja y el armario",
+    Autor: "C.S Lewis",
+    Precio: 18000,
+    Editorial: []
+},
+{
+    Titulo: "Ella",
+    Autor: "Henry Rider Haggard",
+    Precio: "15000",
+    Editorial: []
+},
+{
+    Titulo: "El código Da Vinci",
+    Autor: "Dan Brown",
+    Precio: 20000,
+    Editorial: []
+},
+{
+    Titulo: "El guardian entre el centeno",
+    Autor: "J.D. Salinger",
+    Precio: 2000,
+    Editorial: []
+},
+{
+    Titulo: "El alquimista",
+    Autor: "Paulo Coelho",
+    Precio: 16000,
+    Editorial: []
+},
+{
+    Titulo: "El camino a Cristo",
+    Autor: "Ellen G. White",
+    Precio: 2000,
+    Editorial: []
+},
+{
+    Titulo: "Heidi",
+    Autor: "Johanna Spyri",
+    Precio: 2000,
+    Editorial: []
+},
+{
+    Titulo: "El libro del sentido del común del cuidado de bebés y niños (Tu hijo)",
+    Autor: "Dr. Benjamin Spock",
+    Precio: 20000,
+    Editorial: []
+},
+{
+    Titulo: "Ana de las tejas verdes",
+    Autor: "Lucy Maus Montgomery",
+    Precio: 5000,
+    Editorial: []
+},
+{
+    Titulo: "Azabache (Bella Negra)",
+    Autor: "Anna Sewell",
+    Precio: 2000,
+    Editorial: []
+},
+{
+    Titulo: "El nombre de la rosa",
+    Autor: "Umberto Eco",
+    Precio: 18000,
+    Editorial: []
+}]);
+
+
+
+db.Libros.updateMany({"Precio":{$in:[10000,11000]}},
+    {
+        $set:{
+            "Editorial":
+            [{
+                "codEditorial":101,
+                "nomEditorial":"Zig-Zag"
+            }]
+    }
+});
+
+db.Libros.updateMany({"Precio":{$in:[12000,14000]}},
+    {
+        $set:{
+            "Editorial":
+            [{
+                "codEditorial":102,
+                "nomEditorial":"Acantilado"
+            }]
+    }
+});
+
+db.Libros.updateMany({"Precio":{$in:[15000,17000]}},
+    {
+        $set:{
+            "Editorial":
+            [{
+                "codEditorial":103,
+                "nomEditorial":"Aguilar"
+            }]
+    }
+});
+
+db.Libros.updateMany({"Precio":{$in:[18000,19000]}},
+    {
+        $set:{
+            "Editorial":
+            [{
+                "codEditorial":104,
+                "nomEditorial":"Akal"
+            }]
+    }
+});
+
+db.Libros.updateMany({"Precio":{$eq:[20000]}},
+    {
+        $set:{
+            "Editorial":
+            [{
+                "codEditorial":105,
+                "nomEditorial":"Anagrama"
+            }]
+    }
+});
+
+db.Libros.updateMany({"Precio":{$gt:5000}},{$set:{"Calidad":"Premium" }});

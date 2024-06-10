@@ -8,7 +8,7 @@ db.Receta.insertMany([
         tiempoPreparacion: "20 minutos", 
         chefEspecialistas: [{
             runChef: "13.545.232-4",
-            nombrechef: "Yann Yvin"
+              nombrechef: "Yann Yvin"
         }], 
         ingredientes: [
             { 

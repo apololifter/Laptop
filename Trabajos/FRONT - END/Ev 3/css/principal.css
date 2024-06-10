@@ -1,0 +1,46 @@
+label {
+    display: block;
+    font:
+      1rem 'Fira Sans',
+      sans-serif;
+  }
+  
+  input,
+  label {
+    margin: 0.4rem 0;
+  }
+
+  hr {
+    background-color: red;
+  }
+
+  .linea {
+    border-top: 1px solid black;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+
+
+  body {
+    color: #797979;
+    background: #f1f2f7;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 13px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+#carpetas-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Añade un espacio entre las carpetas */
+}
+
+#carpetas-contenedor .col {
+  flex: 0 1 calc(25% - 10px); /* Ajusta el tamaño de las columnas */
+  box-sizing: border-box;
+}
